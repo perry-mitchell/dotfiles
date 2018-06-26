@@ -4,7 +4,7 @@ echo " - Installing NodeJS"
 
 if [ -z "$(which node)" ]; then
   if isMac; then
-    echo "(will be installed using Homebrew)"
+    brew install node
   else
     curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
     sudo apt-get install -y nodejs
